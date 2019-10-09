@@ -23,7 +23,7 @@ class Cat:
 
     * Implement method run it receives hours value
       Calculate run km per hours remember that you have average_speed value
-      Than if your cat run more or eq than 25 _reduce_saturation_level with value 2
+      Than if your cat run less or eq than 25 _reduce_saturation_level with value 2
       if it runs between 25(not including) and 50(including) than _reduce_saturation_level with value 5
       if it runs between 50(not including) and 100(including) than _reduce_saturation_level with value 15
       if it runs between 100(not including) and 200(including) than _reduce_saturation_level with value 25
@@ -32,7 +32,7 @@ class Cat:
       return text like this: f"Your cat ran {ran_km} kilometers"
 
     * Implement get_saturation_level and return saturation_level
-      if saturation_level eq 0 return text like this: "Your cat is died :("
+      if saturation_level eq 0 return text like this: "Your cat is dead :("
 
     * Implement get_average_speed and return average_speed
 
@@ -73,7 +73,7 @@ class Cheetah:
 
     * Redefine method _set_average_speed
       if age less or eq 5 return 90
-      if age between 5 and 15(including) return 90
+      if age between 5 and 15(including) return 75
       if age grosser 15(not including) return 40
 
     """
