@@ -4,7 +4,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 
 def pay_developer(hours, user="Vasya"):
-    logging.debug(f"We get {hours * 10} hours of work")
+    logging.debug(f"We get {hours} hours of work")
 
     if hours < 120:
         logging.warning(f"Too less {hours} hours for {user}")
