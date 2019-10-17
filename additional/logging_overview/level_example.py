@@ -1,6 +1,6 @@
 import logging
 
-# logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.DEBUG)
 
 logging.debug('This is a debug message')
 logging.info('This is an info message')

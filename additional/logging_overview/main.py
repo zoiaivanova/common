@@ -3,11 +3,11 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 
 
-def pay_developer(hours):
-    logging.debug(f"We get {hours} hours of work")
+def pay_developer(hours, user="Vasya"):
+    logging.debug(f"We get {hours * 10} hours of work")
 
     if hours < 120:
-        logging.warning(f"Too less hours {hours}")
+        logging.warning(f"Too less {hours} hours for {user}")
 
     if not isinstance(hours, int):
         logging.error(f"Wrong type of hours {type(hours)}")
