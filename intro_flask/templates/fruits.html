@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block main_content %}
+<h3>List of fruits:</h3>
+
+<ul class="mt-3">
+{% for fruit in fruits %}
+    <li style="color:{{'red' if fruit == 'strawberry' else 'black'}}">
+        {{fruit}}
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock %}
